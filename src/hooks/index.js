@@ -48,7 +48,20 @@ export const useTasks = (selectedProject) => {
           : newTasks.filter((task) => task.archived !== true),
       );
 
-      setArchivedtasks(newTasks.filter(task => task.archived !== false));
+      setArchivedtasks(
+        newTasks.filter((task) => task.archived !== false),
+      );
     });
+
+    return () => unsubscribe();
   }, [selectedProject]);
+
+  return {tasks, archivedtasks};
 };
+
+export const useProjects = () => {
+  const [prjects, setProjects] = useState([]);
+
+  useEffect(() =>
+  firebase.firestore().collection('projects').where())
+}

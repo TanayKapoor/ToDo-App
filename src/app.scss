@@ -28,3 +28,40 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+// variables
+$generic-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,
+  rgba(0, 0, 0, 0.1) 0px 4px 11px;
+$generic-border: 1px solid #f1f1f1;
+$generic-bg: #db4c3f;
+
+@mixin box-overlay() {
+  -webkit-box-shadow: $generic-box-shadow;
+  box-shadow: $generic-box-shadow;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  top: 85px;
+  border-radius: 3px;
+}
+
+// MIXIN VARIABLES
+
+@mixin va($va-align: center) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  @if $va-align != center {
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+  } @else {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}

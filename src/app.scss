@@ -35,6 +35,7 @@ $generic-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,
 $generic-border: 1px solid #f1f1f1;
 $generic-bg: #db4c3f;
 
+// MIXIN VARIABLES
 @mixin box-overlay() {
   -webkit-box-shadow: $generic-box-shadow;
   box-shadow: $generic-box-shadow;
@@ -44,8 +45,6 @@ $generic-bg: #db4c3f;
   top: 85px;
   border-radius: 3px;
 }
-
-// MIXIN VARIABLES
 
 @mixin va($va-align: center) {
   display: -webkit-box;

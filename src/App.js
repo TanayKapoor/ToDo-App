@@ -5,9 +5,11 @@ import { ProjectsProvider, SelectedProjectProvider } from './context';
 
 export const App = () => (
   <SelectedProjectProvider>
-    <div className="App">
-      <Header />
-      <Content />
-    </div>
+    <ProjectsProvider>
+      <div className="App">
+        <Header />
+        <Content />
+      </div>
+    </ProjectsProvider>
   </SelectedProjectProvider>
 );

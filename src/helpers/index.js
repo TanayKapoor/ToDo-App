@@ -32,4 +32,4 @@ export const generatePushId = (() => {
 
         return id;
     };
-})();0
+})();

@@ -6,16 +6,15 @@ export const SelectedProjectProvider = ({ children }) => {
   const [selectedProject, setSelectedProject] = useState('INBOX');
 
   return (
-    <SelectedProjectContext.Provider
-      value={{ selectedProject, setSelectedProject }}
-    >
-      {children}
-    </SelectedProjectContext.Provider>
+      <SelectedProjectContext.Provider
+          value={{ selectedProject, setSelectedProject }}
+      >
+        {children}
+      </SelectedProjectContext.Provider>
   );
 };
 
-export const useSelectedProjectValue = () =>
-  useContext(SelectedProjectContext);
+export const useSelectedProjectValue = () => useContext(SelectedProjectContext);
 
 SelectedProjectProvider.propTypes = {
   children: PropTypes.node.isRequired,

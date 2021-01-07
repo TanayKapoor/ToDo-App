@@ -12,15 +12,16 @@ React and firebase based ToDo application.
 - prop-types - 15.7.2
 
 All dependencies are located in package.json, to make sure you have all of them run command
-
-    npm i
-   
+```
+npm i
+```
    ## Starting scripts
-
+```
     npm start 
     npm buid
     npm test
     npm eject
+```
 
 This project is made to get a better understanding of React.
 
@@ -36,11 +37,9 @@ Before running create a file
 > firebase.js
 
 in root directory with following code
-
+```js
     import firebase from 'firebase/app'  
-import 'firebase/firestore';  
-  
-
+    import 'firebase/firestore';  
     const firebaseConfig = firebase.initializeApp({  
       apiKey: 'Your api key',  
       authDomain: 'Your Auth Domain',  
@@ -51,6 +50,7 @@ import 'firebase/firestore';
       appId: 'Your App ID',  
     });  
       export {firebaseConfig as firebase};
+```
 This code will be provided to you by firebase.
 
 > Make sure to index your database before adding your user id to files. Random userId used by me in this project is '0TD1uiFZSC'

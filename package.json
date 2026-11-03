@@ -3,14 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "firebase": "8.0.2",
+    "firebase": "13.2.0",
     "moment": "^2.24.0",
     "node-sass": "4.14.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.1.0",
-    "react-scripts": "4.0.1",
+    "react-scripts": "5.0.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
